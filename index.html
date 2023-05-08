@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=sc, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Picker</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="wrapper container">
+        <section class="hero">
+          <img src="assets/icons/logo.svg" class="logo"/>
+          <h2>Color Picker</h2>
+        </section>
+        <section class="inputs container">
+          <label for="color" id="seed-color">
+            <input type="color" class="seed-color-selector" value="#E906A2" />
+          </label>
+          <label for="color-scheme">
+            <select title="color-scheme" id="color-scheme-selector">
+              <option value="monochrome">Monochrome</option>
+              <option value="monochrome-dark">Monochrome-dark</option>
+              <option value="monochrome-light">Monochrome-light</option>
+              <option value="analogic">Analogic</option>
+              <option value="complement">Complement</option>
+              <option value="analogic-complement">Analogic-complement</option>
+              <option value="triad">Triad</option>
+            </select>
+          </label>
+          <button type="submit" id="color-scheme-btn">Get color scheme</button>
+        </section>
+
+        <section class="results container"></section>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
