@@ -21,31 +21,25 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(98,133,250);
-    background: linear-gradient(0deg, #82019cc0 0%, #b994c2 64%);
-}
-
-.logo{
-    width: 20%;
+    background: rgb(170, 170, 170);
+    background: linear-gradient(0deg, #050505c0 0%, #8b8b8b 64%);
 }
 
 .wrapper{
     flex-direction: column;
     max-width: 650px;
     background-color: rgba(255, 255, 255, 0.733);
-    border-radius: 1rem;
+    border-radius: 3px;
 
 
 }
 
 .hero{
-    margin: 0 auto;
-    display: flex;
+    margin: 2rem auto;
+    text-align: center;
     width: 30rem;
-    align-items: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 500;
 
 }
 
@@ -54,6 +48,7 @@ main{
     min-height: 5rem ;
     align-items: center;
     gap: 2rem;
+    padding: 0 0 2rem 0;
 }
 
 
@@ -71,9 +66,17 @@ main{
     text-align: center;
     height: 2.625rem ;
     width: 12rem;
-    border-radius: 5px;
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-    
+    border-radius: 3px;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+
+    background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 7px;
+    cursor: pointer;
 
 }
 
@@ -96,8 +99,9 @@ main{
     font-size: 1.1rem;
     line-height: 1rem;
     border:none;
-    border-radius: 5px;
-    background-color: #4d1a53;
+    border-radius: 3px;
+    background-color: #131313;
+    cursor: pointer;
 }
 
 
