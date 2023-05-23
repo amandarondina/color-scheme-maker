@@ -21,7 +21,7 @@ const getColors = function (e) {
     for (let color in colors) {
       let bgColor = colors[color].hex.value;
       results.innerHTML += `<div class="result container">
-            <div class="background-color container" style="background-color:${bgColor}">
+            <div class="background-color container" style="background-color:${bgColor}" title="Copy!">
             <div class="subtitles container">
             <div class="sub-text" onclick="copyColorText(event)">
             <p>${bgColor}</p>
